@@ -66,6 +66,8 @@ The key findings from the analysis of are based on AIDev-pop, a subset of the AI
 
 ![](figs%2Fturnaround_distribution.png)
 
+![](figs/copilot_job_completion_time.png)
+
 ### Who Review the PRs?
 
 ![](./figs/reviewer_classification_stacked.png)
