@@ -1,15 +1,14 @@
 # The Rise of AI Teammates in Software Engineering (SE) 3.0: Replication Package
 
 [![Paper](https://img.shields.io/badge/arXiv-2507.15003-b31b1b.svg)](https://arxiv.org/abs/2507.15003)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-dataset-blue?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/GameBoy/AIDev)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-dataset-blue?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/hao-li/AIDev)
 
 - **Paper:** https://arxiv.org/abs/2507.15003
 - **HuggingFace Dataset:** https://huggingface.co/datasets/GameBoy/AIDev
 
 This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
 3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
-not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/GameBoy/AIDev
-
+not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
 ## Overview
 
 The overview of the AIDev dataset is as follows:
