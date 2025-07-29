@@ -5,12 +5,13 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1RZJL1My_2d_NtGwSlsGbfxT75oykuaut?usp=sharing)
 
 - **Paper:** https://arxiv.org/abs/2507.15003
-- **HuggingFace Dataset:** https://huggingface.co/datasets/GameBoy/AIDev
+- **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
 - **Example Notebook:** https://colab.research.google.com/drive/1RZJL1My_2d_NtGwSlsGbfxT75oykuaut?usp=sharing
 
 This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
 3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
 not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
+
 ## Overview
 
 The overview of the AIDev dataset is as follows:
