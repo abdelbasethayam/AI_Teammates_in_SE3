@@ -12,6 +12,8 @@ This repository contains the replication package for the paper "The Rise of AI T
 3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
 not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
 
+If you're interested in the Human-PRs I used in the paper, you can find them here: https://drive.google.com/file/d/1nKYtm3U3SFMk5_iLXt1oog9glFnEUJ3T/view?usp=sharing
+
 ## Overview
 
 The overview of the AIDev dataset is as follows:
