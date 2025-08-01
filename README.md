@@ -1,4 +1,6 @@
-![](figs/AIDev_logo.png)
+<p align="center">
+  <img src="figs/aidev_logo.png" alt="Description" width="500"/>
+</p>
 
 # The Rise of AI Teammates in Software Engineering (SE) 3.0: Replication Package
 
