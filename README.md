@@ -1,3 +1,5 @@
+![](figs/AIDev_logo.png)
+
 # The Rise of AI Teammates in Software Engineering (SE) 3.0: Replication Package
 
 [![Paper](https://img.shields.io/badge/arXiv-2507.15003-b31b1b.svg)](https://arxiv.org/abs/2507.15003)
@@ -66,21 +68,50 @@ The key findings from the analysis of are based on AIDev-pop, a subset of the AI
 
 ![pr_merge_compare_radar.png](figs%2Fpr_merge_compare_radar.png)
 
+**Across all evaluated Autonomous Coding Agents, PR acceptance rates consistently lag behind human performance**, particularly for feature
+development (feat), bug fixes (fix), and performance optimization (perf) tasks. Among the Autonomous Coding
+Agents, OpenAI Codex achieves the highest acceptance rate at 64%, followed by Devin at 49% and GitHub Copilot
+at 35%.
+
 ### Turnaround Time
 
 ![](figs%2Fturnaround_distribution.png)
 
+**OpenAI Codex PRs cut review time by 10 times, boosting efficiency but questioning review
+depth**. accepted PRs from OpenAI Codex close in a median of 0.3 hours (18 minutes),
+which is significantly faster than Human-PRs (3.9 hours). Rejected PRs from OpenAI Codex
+are also triaged significantly faster (2.4 vs. 27.6 hours).
+
 ![](figs/copilot_job_completion_time.png)
+
+**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution
+exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. 
 
 ### Who Review the PRs?
 
 ![](./figs/reviewer_classification_stacked.png)
 
+**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift
+toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive
+no explicit review in the majority of cases (75.3% and 58.2%, respectively), while the second most common category
+involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-
+PRs (20.1%) than in Human-PRs (10.0%). 
+
 ![](./figs/bot_heatmap.png)
+
+**Autonomous Coding Agents and their paired review bots often originate from the same
+provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific
+biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.
+The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.
 
 ### Language Usage
 
 ![](figs%2Ftotal_language_percentages_top.png)
+
+**Autonomous Coding Agents exhibit distinct language preferences reflecting domain specialization in their capabilities.** 
+TypeScript is the most common language across all agents, underscoring its popularity in AI-assisted development.
+However, notable divergences emerge: OpenAI Codex shows a pronounced skew toward Python, while GitHub
+Copilot heavily favours C#, likely reflecting their respective integrations and user bases.
 
 ## Dataset Schema
 
