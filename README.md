@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figs/aidev_logo.png" alt="Description" width="500"/>
+  <img src="figs/aidev_logo.png" alt="Description" width="300"/>
 </p>
 
 # The Rise of AI Teammates in Software Engineering (SE) 3.0: Replication Package
