@@ -12,7 +12,7 @@
 - **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
 - **Example Notebook:** https://colab.research.google.com/drive/1RZJL1My_2d_NtGwSlsGbfxT75oykuaut?usp=sharing
 
-> **Update (Aug 10, 2025):** The dataset has been refreshed to include data up to **August 1, 2025**, ensuring 
+> ⚠️ **Update (Aug 10, 2025):** The dataset has been refreshed to include data up to **August 1, 2025**, ensuring 
 > our dataset reflects the most recent trends in coding agents.
 
 This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
