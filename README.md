@@ -12,6 +12,9 @@
 - **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
 - **Example Notebook:** https://colab.research.google.com/drive/1RZJL1My_2d_NtGwSlsGbfxT75oykuaut?usp=sharing
 
+> **Update (Aug 10, 2025):** The dataset has been refreshed to include data up to **August 1, 2025**, ensuring 
+> our dataset reflects the most recent trends in coding agents.
+
 This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
 3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
 not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
@@ -86,27 +89,41 @@ depth**. accepted PRs from OpenAI Codex close in a median of 0.3 hours (18 minut
 which is significantly faster than Human-PRs (3.9 hours). Rejected PRs from OpenAI Codex
 are also triaged significantly faster (2.4 vs. 27.6 hours).
 
-![](figs/copilot_job_completion_time.png)
+[//]: # ()
+[//]: # (![]&#40;figs/copilot_job_completion_time.png&#41;)
 
-**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution
-exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. 
+[//]: # ()
+[//]: # (**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution)
 
-### Who Review the PRs?
+[//]: # (exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. )
+[//]: # ()
+[//]: # (### Who Review the PRs?)
 
-![](./figs/reviewer_classification_stacked.png)
+[//]: # ()
+[//]: # (![]&#40;./figs/reviewer_classification_stacked.png&#41;)
 
-**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift
-toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive
-no explicit review in the majority of cases (75.3% and 58.2%, respectively), while the second most common category
-involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-
-PRs (20.1%) than in Human-PRs (10.0%). 
+[//]: # ()
+[//]: # (**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift)
 
-![](./figs/bot_heatmap.png)
+[//]: # (toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive)
 
-**Autonomous Coding Agents and their paired review bots often originate from the same
-provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific
-biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.
-The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.
+[//]: # (no explicit review in the majority of cases &#40;75.3% and 58.2%, respectively&#41;, while the second most common category)
+
+[//]: # (involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-)
+
+[//]: # (PRs &#40;20.1%&#41; than in Human-PRs &#40;10.0%&#41;. )
+
+[//]: # ()
+[//]: # (![]&#40;./figs/bot_heatmap.png&#41;)
+
+[//]: # ()
+[//]: # (**Autonomous Coding Agents and their paired review bots often originate from the same)
+
+[//]: # (provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific)
+
+[//]: # (biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.)
+
+[//]: # (The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.)
 
 ### Language Usage
 
