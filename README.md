@@ -12,6 +12,9 @@
 - **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
 - **Example Notebook:** https://colab.research.google.com/drive/1RZJL1My_2d_NtGwSlsGbfxT75oykuaut?usp=sharing
 
+> **Update (Aug 10, 2025):** The dataset has been refreshed to include data up to **August 1, 2025**, ensuring 
+> our dataset reflects the most recent trends in coding agents.
+
 This repository contains the replication package for the paper "The Rise of AI Teammates in Software Engineering (SE)
 3.0: How Autonomous Coding Agents Are Reshaping SE". Due to the size limit of GitHub repositories, the full dataset is
 not included here. You can find our full dataset on HuggingFace: https://huggingface.co/datasets/hao-li/AIDev
@@ -22,16 +25,16 @@ not included here. You can find our full dataset on HuggingFace: https://hugging
 
 The overview of the AIDev dataset is as follows:
 
-|                  | #PR         | #Developer | #Repo      |
-|------------------|-------------|------------|------------|
-| `OpenAI Codex`   | 411,621     | 41,619     | 53,702     |
-| `Devin`          | 24,893      | 2,897      | 3,857      |
-| `GitHub Copilot` | 16,531      | 1,916      | 3,097      |
-| `Cursor`         | 1,981       | 753        | 828        |
-| `Claude Code`    | 1,509       | 585        | 645        |
-| **Total**        | **456,535** | **47,303** | **61,453** |
+|                  | #PR         | #Developer | #Repo       |
+|------------------|-------------|------------|-------------|
+| `OpenAI Codex`   | 814,522     | 61,653     | 84,704      |
+| `Devin`          | 29,744      | 1          | 4,747       |
+| `GitHub Copilot` | 50,447      | 379        | 14,492      |
+| `Cursor`         | 32,941      | 9,658      | 12,699      |
+| `Claude Code`    | 5,137       | 1,643      | 1,915       |
+| **Total**        | **932,791** | **72,189** | **116,423** |
 
-![](./figs/pr_cumulative.png)
+![](./figs/pr_cumulative_all.png)
 
 ## Repository Structure
 
@@ -55,16 +58,18 @@ pip install -r requirements.txt
 
 The key findings from the analysis of are based on AIDev-pop, a subset of the AIDev dataset.
 
-### AIDev-pop: Filtered (>500 stars)
+### AIDev-pop: Filtered (>100 stars)
 
-|                  | #PR       | #Developer | #Repo   |
-|------------------|-----------|------------|---------|
-| `OpenAI Codex`   | 2,686     | 522        | 467     |
-| `Devin`          | 2,729     | 300        | 130     |
-| `GitHub Copilot` | 1,462     | 309        | 215     |
-| `Cursor`         | 144       | 66         | 52      |
-| `Claude Code`    | 101       | 68         | 61      |
-| **Total**        | **7,122** | **1,240**  | **856** |
+|                  | #PR        | #Developer | #Repo     |
+|------------------|------------|------------|-----------|
+| `OpenAI Codex`   | 21,799     | 1,284      | 1,248     |
+| `Devin`          | 4,827      | 1          | 288       |
+| `GitHub Copilot` | 4,970      | 1          | 1,012     |
+| `Cursor`         | 1,541      | 363        | 327       |
+| `Claude Code`    | 459        | 236        | 213       |
+| **Total**        | **33,596** | **1,797**  | **2,807** |
+
+![](./figs/pr_cumulative_popular.png)
 
 ### Productivity in Coding Agents Era
 
@@ -84,27 +89,41 @@ depth**. accepted PRs from OpenAI Codex close in a median of 0.3 hours (18 minut
 which is significantly faster than Human-PRs (3.9 hours). Rejected PRs from OpenAI Codex
 are also triaged significantly faster (2.4 vs. 27.6 hours).
 
-![](figs/copilot_job_completion_time.png)
+[//]: # ()
+[//]: # (![]&#40;figs/copilot_job_completion_time.png&#41;)
 
-**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution
-exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. 
+[//]: # ()
+[//]: # (**GitHub Copilot delivers half of its PRs within 12.8 minutes**. While 75% of jobs are completed within 18.5 minutes, the distribution)
 
-### Who Review the PRs?
+[//]: # (exhibits a long tail extending up to 60 minutes, with the 95th percentile exceeding one hour. )
+[//]: # ()
+[//]: # (### Who Review the PRs?)
 
-![](./figs/reviewer_classification_stacked.png)
+[//]: # ()
+[//]: # (![]&#40;./figs/reviewer_classification_stacked.png&#41;)
 
-**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift
-toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive
-no explicit review in the majority of cases (75.3% and 58.2%, respectively), while the second most common category
-involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-
-PRs (20.1%) than in Human-PRs (10.0%). 
+[//]: # ()
+[//]: # (**Human reviewers remain dominant across Agentic-PRs yet GitHub Copilot drives a shift)
 
-![](./figs/bot_heatmap.png)
+[//]: # (toward automated hybrid collaboration in review**. Both Human-PRs and Agentic-PRs receive)
 
-**Autonomous Coding Agents and their paired review bots often originate from the same
-provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific
-biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.
-The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.
+[//]: # (no explicit review in the majority of cases &#40;75.3% and 58.2%, respectively&#41;, while the second most common category)
+
+[//]: # (involves reviews conducted solely by humans, at 14.7% and 21.8%. Notably, bot reviewers are more prevalent in Agentic-)
+
+[//]: # (PRs &#40;20.1%&#41; than in Human-PRs &#40;10.0%&#41;. )
+
+[//]: # ()
+[//]: # (![]&#40;./figs/bot_heatmap.png&#41;)
+
+[//]: # ()
+[//]: # (**Autonomous Coding Agents and their paired review bots often originate from the same)
+
+[//]: # (provider, forming closed PR-review loops that streamline workflows; but risk reinforcing provider-specific)
+
+[//]: # (biases.** We analyze the top 10 most active review bots to understand on which Autonomous Coding Agents they operate.)
+
+[//]: # (The heatmap illustrates a strong association between review bots and Autonomous Coding Agents from the same provider.)
 
 ### Language Usage
 
