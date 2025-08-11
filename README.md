@@ -71,23 +71,13 @@ The key findings from the analysis of are based on AIDev-pop, a subset of the AI
 
 ![](./figs/pr_cumulative_popular.png)
 
-### Productivity in Coding Agents Era
+### Productivity in the Coding Agents Era
 
-![pr_merge_compare_radar.png](figs%2Fpr_merge_compare_radar.png)
-
-**Across all evaluated Autonomous Coding Agents, PR acceptance rates consistently lag behind human performance**, particularly for feature
-development (feat), bug fixes (fix), and performance optimization (perf) tasks. Among the Autonomous Coding
-Agents, OpenAI Codex achieves the highest acceptance rate at 64%, followed by Devin at 49% and GitHub Copilot
-at 35%.
+![pr_merge_compare_radar2.png](figs%2Fpr_merge_compare_radar2.png)
 
 ### Turnaround Time
 
 ![](figs%2Fturnaround_distribution.png)
-
-**OpenAI Codex PRs cut review time by 10 times, boosting efficiency but questioning review
-depth**. accepted PRs from OpenAI Codex close in a median of 0.3 hours (18 minutes),
-which is significantly faster than Human-PRs (3.9 hours). Rejected PRs from OpenAI Codex
-are also triaged significantly faster (2.4 vs. 27.6 hours).
 
 [//]: # ()
 [//]: # (![]&#40;figs/copilot_job_completion_time.png&#41;)
