@@ -26,13 +26,13 @@ not included here. You can find our full dataset on HuggingFace: https://hugging
 The overview of the AIDev dataset is as follows:
 
 |                  | #PR         | #Developer | #Repo       |
-|------------------|-------------|------------|-------------|
+| ---------------- | ----------- |------------|-------------|
 | `OpenAI Codex`   | 814,522     | 61,653     | 84,704      |
-| `Devin`          | 29,744      | 1          | 4,747       |
-| `GitHub Copilot` | 50,447      | 379        | 14,492      |
+| `Devin`          | 29,744      | NA         | 4,747       |
+| `GitHub Copilot` | 50,447      | NA         | 14,492      |
 | `Cursor`         | 32,941      | 9,658      | 12,699      |
 | `Claude Code`    | 5,137       | 1,643      | 1,915       |
-| **Total**        | **932,791** | **72,189** | **116,423** |
+| **Total**        | **932,791** | **71,167** | **116,211** |
 
 ![](./figs/pr_cumulative_all.png)
 
@@ -61,10 +61,10 @@ The key findings from the analysis of are based on AIDev-pop, a subset of the AI
 ### AIDev-pop: Filtered (>100 stars)
 
 |                  | #PR        | #Developer | #Repo     |
-|------------------|------------|------------|-----------|
+| ---------------- | ---------- |------------| --------- |
 | `OpenAI Codex`   | 21,799     | 1,284      | 1,248     |
-| `Devin`          | 4,827      | 1          | 288       |
-| `GitHub Copilot` | 4,970      | 1          | 1,012     |
+| `Devin`          | 4,827      | NA         | 288       |
+| `GitHub Copilot` | 4,970      | NA         | 1,012     |
 | `Cursor`         | 1,541      | 363        | 327       |
 | `Claude Code`    | 459        | 236        | 213       |
 | **Total**        | **33,596** | **1,797**  | **2,807** |
