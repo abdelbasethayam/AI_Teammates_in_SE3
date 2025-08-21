@@ -2,11 +2,11 @@
   <img src="figs/aidev_logo.png" alt="Description" width="300"/>
 </p>
 
-# The Rise of AI Teammates in Software Engineering (SE) 3.0: Replication Package
+# AIDev: Studying AI Coding Agents on GitHub (The Rise of AI Teammates in Software Engineering 3.0)
 
 [![Paper](https://img.shields.io/badge/arXiv-2507.15003-b31b1b.svg)](https://arxiv.org/abs/2507.15003)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-dataset-blue?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/hao-li/AIDev)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16899502.svg)](https://doi.org/10.5281/zenodo.16899502)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16919051.svg)](https://doi.org/10.5281/zenodo.16919051)
 
 - **Paper:** https://arxiv.org/abs/2507.15003
 - **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
@@ -39,7 +39,7 @@ The overview of the AIDev dataset is as follows:
 | `GitHub Copilot` | 50,447      | NA         | 14,492      |
 | `Cursor`         | 32,941      | 9,658      | 12,699      |
 | `Claude Code`    | 5,137       | 1,643      | 1,915       |
-| **Total**        | **932,791** | **71,167** | **116,211** |
+| **Total**        | **932,791** | **72,189** | **116,211** |
 
 ![](./figs/pr_cumulative_all.png)
 
@@ -74,7 +74,7 @@ The key findings from the analysis of are based on AIDev-pop, a subset of the AI
 | `GitHub Copilot` | 4,970      | NA         | 1,012     |
 | `Cursor`         | 1,541      | 363        | 327       |
 | `Claude Code`    | 459        | 236        | 213       |
-| **Total**        | **33,596** | **1,797**  | **2,807** |
+| **Total**        | **33,596** | **1,796**  | **2,807** |
 
 ![](./figs/pr_cumulative_popular.png)
 
