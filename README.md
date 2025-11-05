@@ -9,7 +9,7 @@
 
 [![Paper](https://img.shields.io/badge/arXiv-2507.15003-b31b1b.svg)](https://arxiv.org/abs/2507.15003)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-dataset-blue?logo=huggingface&logoColor=white)](https://huggingface.co/datasets/hao-li/AIDev)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16919051.svg)](https://doi.org/10.5281/zenodo.16919051)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16919272.svg)](https://doi.org/10.5281/zenodo.16919272)
 
 - **Paper:** https://arxiv.org/abs/2507.15003
 - **HuggingFace Dataset:** https://huggingface.co/datasets/hao-li/AIDev
